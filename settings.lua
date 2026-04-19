@@ -1,0 +1,20 @@
+data:extend({
+	{
+		type = "bool-setting",
+		name = "deepsea-on-gleba",
+		setting_type = "startup",
+		default_value = false,
+		order = "deepsea-mechanic-a",
+	},
+})
+if not mods["depths_of_nauvis"] then
+	data:extend({
+		{
+			type = "bool-setting",
+			name = "deepsea-on-nauvis",
+			setting_type = "startup",
+			default_value = false,
+			order = "deepsea-mechanic-a",
+		},
+	})
+end

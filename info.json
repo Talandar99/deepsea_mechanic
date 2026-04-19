@@ -1,0 +1,12 @@
+{
+    "name": "deepsea_mechanic",
+    "version": "0.1.0",
+    "title": "Deepsea Mechanic",
+    "author": "Talandar",
+    "dependencies": [
+        "base >= 2.0",
+        "? space-age"
+    ],
+    "description": "Disables ability to place landfill, and some infrastructure on \"deepsea\" areas. Intended to be combined with cargo ship based mods",
+    "factorio_version": "2.0"
+}
