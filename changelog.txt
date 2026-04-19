@@ -3,9 +3,10 @@ Version: 0.2.0
 Date: 2026-04-19
   Bugfixes/Changes:
     - Elevated rails are blocked on deepsea. In order to not create new colision layers, I reused 
-      existing rail_support layer. Removed rail-support-foundations technology. 
-      Rail support can now be placed on fulgora heavy oil deepsea from the moment you unlock 
-      elevated rails, you can also pernamently disable elevated rails on heavy oil in settings
+      existing rail_support layer. 
+    - Removed rail-support-foundations technology. Rail support can now be placed on fulgora heavy 
+      oil deepsea from the moment you unlock elevated rails, you can also pernamently disable 
+      elevated rails on heavy oil in settings
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2026-04-19

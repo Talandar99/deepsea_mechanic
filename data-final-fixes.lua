@@ -21,13 +21,15 @@ else
 	end
 end
 
-if settings.startup["deepsea-on-fulgora"].value then
-	-- fulgora oil ocean
-	deepwater_tiles["oil-ocean-deep"] = true
-end
+if mods["space-age"] then
+	if settings.startup["deepsea-on-fulgora"].value then
+		-- fulgora oil ocean
+		deepwater_tiles["oil-ocean-deep"] = true
+	end
 
-if settings.startup["deepsea-on-gleba"].value then
-	deepwater_tiles["gleba-deep-lake"] = true
+	if settings.startup["deepsea-on-gleba"].value then
+		deepwater_tiles["gleba-deep-lake"] = true
+	end
 end
 
 local function remove_tile_conditions(item_name, blocked_tiles)
@@ -61,11 +63,14 @@ if mods["elevated-rails"] then
 		end
 		return mask_owner.collision_mask.layers
 	end
-	do
-		local oil_ocean_deep = data.raw.tile["oil-ocean-deep"]
-		if oil_ocean_deep then
-			local layers = ensure_collision_layers(oil_ocean_deep)
-			layers["rail_support"] = nil
+
+	if mods["space-age"] then
+		do
+			local oil_ocean_deep = data.raw.tile["oil-ocean-deep"]
+			if oil_ocean_deep then
+				local layers = ensure_collision_layers(oil_ocean_deep)
+				layers["rail_support"] = nil
+			end
 		end
 	end
 	for tile_name, _ in pairs(deepwater_tiles) do
