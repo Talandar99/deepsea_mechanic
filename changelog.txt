@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2026-04-19
-  Bugfixes/Changes:
+  Changes:
     - Elevated rails are blocked on deepsea. In order to not create new colision layers, I reused 
       existing rail_support layer. 
     - Removed rail-support-foundations technology. Rail support can now be placed on fulgora heavy 
