@@ -5,7 +5,6 @@ local deepwater_tiles = {
 local blocked_fill_items = {
 	"landfill",
 	"sandfill",
-	"rail-foundation",
 	"planetaris-sandstone-foundation",
 }
 
@@ -24,10 +23,6 @@ else
 end
 
 if mods["space-age"] then
-	if settings.startup["deepsea-on-fulgora"].value then
-		deepwater_tiles["oil-ocean-deep"] = true
-	end
-
 	if settings.startup["deepsea-on-gleba"].value then
 		deepwater_tiles["gleba-deep-lake"] = true
 	end
@@ -81,4 +76,9 @@ for entity_name, entity_type in pairs(blocked_entities) do
 	if proto then
 		ensure_layers(proto)["deepsea_mechanic"] = true
 	end
+end
+
+if mods["elevated-rails"] then
+	data.raw["utility-constants"].default.default_collision_masks["rail-support"].layers["deepsea_mechanic"] = true
+	data.raw["utility-constants"].default.default_collision_masks["rail-ramp"].layers["deepsea_mechanic"] = true
 end
