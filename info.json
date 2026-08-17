@@ -1,12 +1,12 @@
 {
     "name": "deepsea_mechanic",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "title": "Deepsea Mechanic",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
         "? space-age"
     ],
-    "description": "Configurable in settings: Disables ability to place landfill, and some infrastructure on \"deepsea\" areas. Intended to be combined with cargo ship based mods",
-    "factorio_version": "2.0"
+    "description": "Disables ability to place landfill, and some infrastructure (elevated rails) on \"deepsea\" areas. Intended to be combined with cargo ship based mods. ",
+    "factorio_version": "2.1"
 }
